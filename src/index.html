@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de checkout da empresa">
+    <meta name="keywords" content="formulário,checkout,html,css,javascript">
+    <meta name="author" content="http://linkedin.com/in/joilsonmslopes">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Checkout</title>
+</head>
+<body>
+    <div class="container">
+        <header class="menu-desktop">
+            <div class="logo">
+                <div class="texto">    
+                    <h2>Detox</h2>
+                    <p>de 15 dias</p>
+                </div>
+            </div>
+            <div class="title">
+                <div class="texto">
+                    <h2>Informações do Pagamento</h2>
+                    <p>
+                        Preencha os campos abaixo<br>
+                        Efetuar seu pedido
+                    </p>
+                </div>
+            </div>
+        </header><!--menu-desktop-->
+
+        <header class="menu-mobile">
+                <img src="/assets/credit-card-mobile.png" alt="Image de cartão de crédito">
+                <h2>Preencha os campos abaixo<br>
+                    Efetuar seu pedido</h2>
+        </header>
+        <nav>
+            <div class="icon-home">
+                <a href="#"><img src="/assets/icon-home.png" alt=""></a>
+            </div>
+            <div class="path">
+                <a href="#">CheckOut</a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="forms">
+                <div class="produto">
+                    <div class="img-produto">
+                        <img src="/assets/Image 7.png" alt="Imagem do produto">
+                    </div>
+                    <div class="descricao">
+                        <h2>Ebook Detox de 15 dias</h2>
+                        <p>12x de R$ 19,90 *</p>
+                        <p>OFERTA PRINCIPAL</p>
+                    </div>
+                </div><!--produto-->
+
+                <div class="form-endereco">
+                    <form action="">
+                            <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                            <input type="text" name="cpf" id="cpf" placeholder="CPF / CNPJ">
+                            <input type="text" name="cep" id="cep" placeholder="CEP (busca de endereço)">
+                            <!---->
+                                <input type="text" class="hide address_verify" name="logradouro" id="logradouro" placeholder="Logradouro">
+                                <input type="number"class="hide address_verify" name="numero" id="numero" placeholder="Número">
+                                <input type="text" class="hide address_verify" name="uf" id="uf" placeholder="UF">
+                                <input type="text" class="hide address_verify" name="localidade" id="localidade" placeholder="Cidade">
+                            <!---->
+                            <input type="text" name="celular" id="celular" placeholder="Celular">
+                            <input type="text" name="email" id="email" placeholder="E-mail">
+                            <input type="text" name="repete-email" id="repete-email" placeholder="Digite novamente seu E-mail">
+
+                    </form>
+                </div><!--form-endereco-->
+
+                <div class="cartao">
+                    <img src="/assets/credit-card.png" alt="Image de cartao bancario">
+                    <h2>Cartao de Crédito</h2>
+                </div><!--cartao-->
+
+                <div class="form-cartao">
+                    <form action="">
+                        <div class="input-wrapper">
+                            <input type="number" name="numero-cartao" id="numero-cartao" placeholder="Número do Cartão">
+                            <input type="text" name="nome-cartao" id="nome-cartao" placeholder="Nome do titular como no Cartão">
+                        </div><!--input-wrapper-->
+                        <div class="input-wrapper">
+                            <select name="mes-venc" id="mes-venc">
+                                <option value="MM" selected disabled>MM</option>
+                                <option value="Janeiro">Janeiro</option>
+                                <option value="Fevereiro">Fevereiro</option>
+                                <option value="Março">Março</option>
+                                <option value="Abril">Abril</option>
+                                <option value="Maio">Maio</option>
+                                <option value="Junho">Junho</option>
+                                <option value="Julho">Julho</option>
+                                <option value="Agosto">Agosto</option>
+                                <option value="Setembro">Setembro</option>
+                                <option value="Outubro">Outubro</option>
+                                <option value="Novembro">Novembro</option>
+                                <option value="Dezembro">Dezembro</option>
+                            </select>
+                            <select name="ano-venc" id="ano-venc">
+                                <option value="AA" selected disabled>AA</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                            <div id="input-container">
+                                <img src="/assets/btn-int.png" alt="Botão de dica do código de segurança">
+                                <input type="number" name="cod-seguranca" id="cod-seguranca" placeholder="Código de Segurança">
+                            </div>
+                        </div><!--input-wrapper-->
+                        <div class="input-wrapper">
+                            <select name="parcela" id="parcela">
+                                <option value="12x">12x</option>
+                                <option value="11x">11x</option>
+                                <option value="10x">10x</option>
+                                <option value="09x">09x</option>
+                                <option value="08x">08x</option>
+                                <option value="07x">07x</option>
+                                <option value="06x">06x</option>
+                                <option value="05x">05x</option>
+                                <option value="04x">04x</option>
+                                <option value="03x">03x</option>
+                                <option value="02x">02x</option>
+                                <option value="01x">01x</option>
+                            </select>
+                        </div><!--input-wrapper-->
+                        </form>
+                    </div><!--form-cartao-->
+
+                    <div class="button">
+                        <input type="submit" name="acao" value="CONFIRMAR PEDIDO">
+                    </div><!--button-->
+            </div><!--forms-->
+
+            <div class="descricao-produto">
+                <img src="/assets/image-main.png" alt="Imagem grande do produto">
+
+                <div class="produto">
+                    <div class="img-produto">
+                        <img src="/assets/Image 7.png" alt="Imagem do produto">
+                    </div><!--img-produto-->
+                    <div class="descricao">
+                        <h2>Ebook Detox de 15 dias</h2>
+                        <p>12x de R$ 19,90 *</p>
+                        <p>OFERTA PRINCIPAL</p>
+                    </div><!--descricao-->
+                </div><!--produto-->
+
+                <div class="comentarios">
+                    <div class="title-comentarios">
+                        <h2>GARANTIA INCONDICIONAL</h2>
+                        <span></span>
+                    </div>
+                    <p>De 7 dias</p>
+                    <p>
+                        Sabemos da qualidade do que entregamos e por isso você tem a garantia incondicional de 7 dias. Isso significa que se algo, qualquer coisa não agradar você, caso ache que seus objetivos não serão atingidos, basta enviar um simples e-mail para o suporte e nós reembolsaremos 100% do valor do seu investimento, sem burocracia alguma!
+                    </p>
+                </div><!--comentarios-->
+
+                <footer>
+                    <div class="quantidade-pessoas">12</div>
+                    <h2>PESSOAS ESTÃO ADQUIRINDO TAMBÉM AGORA</h2>
+                </footer>
+            </div><!--descricao-produto-->
+        </main>
+
+        </div><!--container-->
+    <script src="/js/main.js"></script>
+</body>
+</html>
